@@ -1,0 +1,26 @@
+/* 980 stylesheet - all devices 980 and over */
+
+/* logo */
+#main-logo { float: left; margin: 12px 0 0 0; }
+
+/* login elements */
+#login-box { float: right; margin: 25px 0 15px 0; }
+
+/* user logged in elements */
+#user-box { float: right; margin: 20px 0 0px 0; }
+
+/* school landing page */
+#school-rank { float: left; width: 280px; margin: 30px 0 0 0; }
+#school-panel { float: right; width: 675px; margin: 30px 0 0 0; }
+#school-stats { width: 280px; }
+#school-stats .stat-info { float: none; text-align: left; height: auto; width: auto; padding: 10px 0 20px 20px; }
+#school-links { float: right; }
+
+/* product detail page */
+#product-detail-panel  { position: relative; max-width: 730px; margin: 30px auto 30px auto; }
+
+
+
+
+/* footer content */
+footer .social-buttons { right: 5%; }

@@ -1,0 +1,23 @@
+/* 480 stylesheet - all devices under 768px */
+
+/* category and edRover menu */
+#nav-menu .menu-item { width: 50%; }
+
+/* sign up panel */
+#sign-up-panel .panel-title { padding: 0 30px 10px 30px; }
+#sign-up-panel .form-wrap { margin: 0 50px; }
+
+/* sign up information */
+#sign-up-info { padding: 20px; }
+
+/* password reset panel */
+#password-reset-panel .form-wrap { margin: 0 30px; }
+
+/* search location panel */
+#search-location-panel .form-wrap { margin: 0 30px; }
+
+
+/* product detail page */
+#product-detail-panel  .item-detail-top { position: relative; padding: 10px 20px; }
+#product-detail-panel  .item-share-title { width: 50%; }
+#product-detail-panel  .item-share-buttons { width: 50%; }

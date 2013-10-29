@@ -1,0 +1,253 @@
+/* main stylesheet - all devices under 480px */
+
+/* body min width: 350px */
+body { min-width: 350px; font-family: "Museo 700", "Museo_700", sans-serif; font-size: 16px; color: #a2a2a2; }
+input { font-family: "Museo 300", "Museo_300", sans-serif; color: #a2a2a2; }
+.clearfix { clear: both; font-size: 0%; }
+.clearleft { clear: right; font-size: 0%; }
+.clearright { clear: left; font-size: 0%; }
+.gap30 { height: 30px; }
+.hidden { display: none; }
+.center-content { text-align: center }
+
+.color-red { color: #cc2026; }
+.color-black { color: #000000; }
+
+/* custom fonts */
+@font-face { font-family: "Museo_300"; src: url('../fonts/Museo_300.otf'); }
+@font-face { font-family: "Museo_500"; src: url('../fonts/Museo_500.otf'); }
+@font-face { font-family: "Museo_700"; src: url('../fonts/Museo_700.otf'); }
+@font-face { font-family: "MuseoSans_300"; src: url('../fonts/MuseoSans_300.otf'); }
+@font-face { font-family: "MuseoSans_500"; src: url('../fonts/MuseoSans_500.ttf'); }
+
+
+
+/* header content */
+header { margin: 0 auto; max-width: 980px; background: #ffffff; text-align: center; padding: 5px; }
+
+/* edRover logo */
+#main-logo { float: none; }
+#main-logo img { max-width: 100%; height: auto; }
+
+/* login elements */
+#login-box { position: relative; margin: 3px auto 3px auto; font-size: 0%; }
+#login-box .login-field { float: none; height: 38px; margin: 1px; border-radius: 1px; }
+#login-box .login-username { background: #f6f6f8 url("../images/icon/login_username.png") 15px 45% no-repeat; }
+#login-box .login-password { background: #f6f6f8 url("../images/icon/login_password.png") 15px 45% no-repeat; }
+#login-box .login-field input { width: 100%; height: 100%; padding: 0 16px 0 40px; font-family: "Museo 700", "Museo_700", sans-serif; font-size: 16px; border: 0; background: transparent; }
+#login-box .login-field input:focus,#login-box .login-field input:hover { color: #727272; }
+#login-box .login-submit { height: 38px; margin: 1px; line-height: 38px; border-radius: 3px; background: #5582a5; }
+#login-box .login-submit:hover { background: #659bc5; }
+#login-box .login-submit a { display: block; width: 100%; text-decoration: none; font-size: 24px; color: #ffffff; }
+
+/* user logged in elements */
+#user-box { position: relative; margin: 0; font-size: 0%; }
+#user-box .user-info-box { margin: 5px 0; }
+#user-box .user-details { display: inline-block; vertical-align: bottom; text-align: right; font-family: "Museo 300" "Museo_300", sans-serif; font-size: 12px; line-height: 15px; font-weight: bold; }
+#user-box .user-avatar { display: inline-block; margin-left: 5px; }
+#user-box .user-earned { color: #72c2ff; }
+#user-box .user-settings a { text-decoration: none; color: #a2a2a2; }
+#user-box .user-settings a:hover { text-decoration: none; color: #ce2a2f; }
+
+#user-box .user-tools { margin: 3px 0; }
+#user-box .search-input { display: inline-block; vertical-align: top; margin-right: 5px; width: 200px; height: 50px; border-radius: 6px; background: #f1f1f1; }
+#user-box .search-input input { width: 100%; height: 100%; padding: 0 24px; font-family: "Museo Sans 300", "Museo_300", sans-serif; font-weight: bold; font-size: 16px; border: 0; color: #909b9f;  background: transparent; }
+#user-box .search-input input:focus,#user-box .search-input input:hover { color: #707374; }
+#user-box .search-submit { display: inline-block; margin-right: 5px; width: 50px; height: 50px; border-radius: 6px; background: #88a4ff url("../images/icon/search-top.png") 50% 50% no-repeat; }
+#user-box .search-submit:hover { background: #9db3fb url("../images/icon/search.png") 50% 50% no-repeat; }
+#user-box .search-submit a { display: block; width: 50px; height: 50px; }
+
+/* menu button for Category + edRover menu */
+.main-menu { display: inline-block; width: 50px; height: 50px; border-radius: 6px; background: #57dcd4 url("../images/icon/menu.png") 55% 50% no-repeat; }
+.main-menu:hover { background: #5ee9e1 url("../images/icon/menu.png") 55% 50% no-repeat; }
+.main-menu a { display: block; width: 50px; height: 50px; }
+
+/* category and edRover menu */
+#nav-menu { display: none; z-index: 100; position: absolute; right: 0px; top: 0px; max-width: 618px; padding-bottom: 15px; border-bottom: 3px solid #ccd4d7; border-radius: 0 0 2px 2px; background: rgba(255, 255, 255, 0.94); }
+#nav-menu .menu-title { margin-left: 16px; line-height: 55px; font-family: "Museo Sans 500", "MuseoSans_500", sans-serif; font-size: 30px; color: #000000; }
+#nav-menu .menu-list { position: relative; list-style: none; }
+#nav-menu .menu-item { float: left; position: relative; width: 100%; height: 55px; }
+#nav-menu .menu-item a { display: block; padding-left: 14px; text-decoration: none; font-family: Calibri; font-size: 20px; line-height: 55px; color: #999999; border-left: 12px solid #99cccc; background: #ebebeb; }
+#nav-menu .menu-item a:hover { color: #33cccc; border-left: 12px solid #57dcd4; background: #ffffff; }
+#nav-menu .menu-divider { margin: 20px 3px 0 3px; height: 5px; background: url("../images/hr.png") repeat; } /* horizontal rule image divider */
+
+
+
+
+/* page contents */
+#contents { position: relative; background: #d0ebf9; }
+#contents-centered { position: relative; margin: 0 auto; padding: 5px; max-width: 980px; background: transparent; background-size: 62%; }
+#contents-full { position: relative; margin: 0 auto; padding: 5px; }
+
+/* common panel elements */
+.panel { border-bottom: 3px solid #ccd4d7; border-radius: 0 0 2px 2px; background: rgba(255, 255, 255, 0.94); }
+.panel-title { text-align: center; padding: 25px 10px 10px 10px; font-size: 30px; line-height: 36px; font-family: "Museo 700", "Museo_700", sans-serif; color: #000000; }
+.panel-subtitle { text-align: center; padding: 0px 10px 10px 10px; font-size: 24px; line-height: 24px; font-family: "Museo 700", "Museo_700", sans-serif; color: #000000; }
+.form-wrap { position: relative; margin: 0 60px; }
+.form-half { position: relative; float: left; width: 100%; }
+.form-box { position: relative; margin-bottom: 12px; height: 38px; background: #efefef; }
+.form-title { font-size: 16px; line-height: 24px; font-family: "Museo 700", "Museo_700", sans-serif; }
+.input-left { float: left; vertical-align: top; position: relative; width: 52px; height: 100%; text-align: center; line-height: 36px; font-size: 16px; font-family: "Calibri"; background: #dbdbdb; user-select: none; -webkit-user-select:none; -moz-user-select:none; }
+.input-star { background: #dbdbdb url("../images/icon/star.png") 50% 50% no-repeat; }
+.input-gmail { background: #dbdbdb url("../images/icon/gmail.png") 50% 50% no-repeat; }
+.input-search { background: #dbdbdb url("../images/icon/gmail.png") 50% 50% no-repeat; }
+.input-email { background: #dbdbdb url("../images/icon/email.png") 50% 50% no-repeat; }
+.input-name { background: #dbdbdb url("../images/icon/name.png") 50% 50% no-repeat; }
+.input-location { background: #dbdbdb url("../images/icon/location.png") 50% 50% no-repeat; }
+.input-birthdate { background: #dbdbdb url("../images/icon/birthdate.png") 50% 50% no-repeat; }
+.input-interest { background: #dbdbdb url("../images/icon/interest.png") 50% 50% no-repeat; }
+.form-input { position: relative; margin-left: 68px; margin-right: 12px; height: 100%; }
+.form-input input{ width: 100%; height: 100%; line-height: 38px; font-size: 16px; font-family: "Museo 300", "Museo_300", sans-serif; color: #999999; border: 0; background: transparent; }
+.form-input input:focus,.form-input input:hover { color: #727272; }
+.panel-submit { text-align: center; margin: 20px 0; }
+.panel-submit a { display: block; margin: 0 auto; width: 212px; height: 38px; font-size: 24px; line-height: 34px; font-family: "Museo 700", "Museo_700", sans-serif; text-decoration: none; border-radius: 3px; color: #ffffff; background: #1fbba6; }
+.panel-submit a:hover { background: #22c9b2; }
+/* horizontal rule image divider */
+.panel-divider { margin: 0 3px; height: 5px; background: url("../images/hr.png") repeat; } 
+
+/* sign up panel */
+#sign-up-panel { position: relative; float: none; margin: 0 auto 30px auto; padding: 25px 0 0 0; }
+#sign-up-panel .panel-title { padding: 0 10px 10px 10px; }
+#sign-up-panel .form-wrap { margin: 0 15px; }
+#sign-up-panel .selectable-male-female { cursor: pointer; }
+#sign-up-panel .selectable-male-female:hover { background: #e2e2e2; }
+#sign-up-panel .form-terms { position: relative; margin: 15px 0 35px 0; cursor: pointer; }
+#sign-up-panel  .checkbox-replacement { float: left; margin-right: 5px; width: 24px; height: 24px; background: url("../images/icon/checkbox.png") 50% 50% no-repeat; }
+#sign-up-panel  .checkbox-replacement.checked { display: inline-block; width: 24px; height: 24px; background: url("../images/icon/checkbox_checked.png") 50% 50% no-repeat; }
+#sign-up-panel .form-terms-text { float: left; font-size: 11px; line-height: 28px; font-family: "Museo Sans 300", "MuseoSans_300", sans-serif; }
+#sign-up-panel .facebook-connect { text-align: center; margin-bottom: 18px; }
+#sign-up-panel .panel-submit { margin: 20px 0; }
+
+/* recently purchased block */
+#recently-purchased { float: none; margin: 0 auto 30px auto; width: 280px; border-radius: 3px; background: #ffffff; }
+#recently-purchased .recent-title { text-align: center; font-size: 24px; line-height: 40px; font-family: Calibri; color: #5e6d81; }
+#recently-purchased .recent-img { text-align: center; margin-bottom: 6px; }
+#recently-purchased .recent-control { position: relative; height: 64px; }
+#recently-purchased a { width: 100%; height: 100%; display: block; }
+#recently-purchased .recent-prev { position: relative; float: left; width: 33%; height: 100%; border-radius: 0 0 0 3px; background: #14b9d6 url("../images/icon/recent_prev.png") 50% 50% no-repeat; }
+#recently-purchased .recent-prev:hover a { border-radius: 0 0 0 3px; background: #15c4e3 url("../images/icon/recent_prev.png") 50% 50% no-repeat; }
+#recently-purchased .recent-pause { position: relative; float: left; width: 34%; height: 100%; background: #f27935 url("../images/icon/recent_pause.png") 50% 50% no-repeat; }
+#recently-purchased .recent-pause:hover a { background: #fd8440 url("../images/icon/recent_pause.png") 50% 50% no-repeat; }
+#recently-purchased .recent-next { position: relative; float: left; width: 33%; height: 100%; border-radius: 0 0 3px 0; background: #1fbba6 url("../images/icon/recent_next.png") 50% 50% no-repeat; }
+#recently-purchased .recent-next:hover a { border-radius: 0 0 3px 0; background: #22c9b2 url("../images/icon/recent_next.png") 50% 50% no-repeat; }
+
+/* sign up information */
+#sign-up-info { float: none; margin: 0 auto 25px auto; padding: 10px; font-size: 12px; line-height: 24px; font-family: "Museo Sans 300", "MuseoSans_300", sans-serif; font-weight: bold; color: #000000; }
+#sign-up-info .info-title { margin-bottom: 20px; font-size: 20px; font-family: "Museo Sans 500", "MuseoSans_500", sans-serif; }
+#sign-up-info p { margin-bottom: 10px; }
+#sign-up-info ul { margin-left: 20px; list-style: disc; list-style-position:inside; }
+
+/* password reset panel */
+#password-reset-panel  { position: relative; max-width: 730px; margin: 0 auto 30px auto; }
+#password-reset-panel .panel-submit { margin: 30px 0 45px 0; }
+#password-reset-panel .form-wrap { margin: 0 15px; }
+#password-reset-panel .form-box { margin-bottom: 30px; }
+
+/* search location panel */
+#search-location-panel  { position: relative; max-width: 730px; margin: 0 auto 30px auto; }
+#search-location-panel .panel-submit { margin: 30px 0 30px 0; }
+#search-location-panel .form-wrap { margin: 0 15px; }
+#search-location-panel .form-box { margin-bottom: 15px; margin-right: 12px; }
+#search-location-panel .form-box-gender { background: transparent; }
+#search-location-panel .form-male { float: left; width: 65px; height: 39px; background: url("../images/icon/male_unchecked.png") 0 1px no-repeat; cursor: pointer; }
+#search-location-panel .form-male.checked { float: left; width: 65px; height: 39px; background: url("../images/icon/male_checked.png") 0 0 no-repeat; cursor: pointer; }
+#search-location-panel .form-female { float: left; width: 65px; height: 39px; background: url("../images/icon/female_unchecked.png") 0 1px no-repeat; cursor: pointer; }
+#search-location-panel .form-female.checked { float: left; width: 65px; height: 39px; background: url("../images/icon/female_checked.png") 0 0 no-repeat; cursor: pointer; }
+#search-location-panel .interest-dropdown dd, .interest-dropdown dt, .interest-dropdown ul { margin:0px; padding:0px; }
+#search-location-panel .interest-dropdown dd { position:relative; }
+#search-location-panel .interest-dropdown a { color:#999999; text-decoration:none; outline:none;}
+#search-location-panel .interest-dropdown a:hover { color:#999999;}
+#search-location-panel .interest-dropdown dt a:hover { color:#727272;}
+#search-location-panel .interest-dropdown dt a { display:block; padding: 5px; padding-right:20px; width: 100%; height: 38px; line-height: 28px; font-family: "Museo Sans 300"; background: #efefef url("../images/icon/drop-arrow.png") no-repeat scroll right center; }
+#search-location-panel .interest-dropdown dt a span {cursor: pointer; display: block;}
+#search-location-panel .interest-dropdown dd ul { background:#efefef none repeat scroll 0 0; border:1px solid #888888; color:#C5C0B0; display:none; left:0px; padding:5px 0px; position:absolute; top:2px; width: auto; min-width:220px; list-style:none;}
+#search-location-panel .interest-dropdown span.value { display: none;}
+#search-location-panel .interest-dropdown dd ul li a { padding: 5px; display: block; font-family: "Museo Sans 300", "MuseoSans_300", sans-serif; }
+#search-location-panel .interest-dropdown dd ul li a:hover { background-color:#f9f9f9; }
+#search-location-panel .panel-footer-link { position: relative; display: inline-block; float: none; margin: 20px auto; padding-left: 25px; background: url("../images/icon/email_link.png") 0 50% no-repeat; }
+#search-location-panel .panel-footer-link  a { color: #72c2ff; text-decoration: none; }
+#search-location-panel .panel-footer-link  a:hover { text-decoration: underline; }
+
+/* school landing page */
+#school-rank { position: relative; float: left; margin: 0; width: 100%; }
+#school-rank .rank-title{ height: 52px; text-align: center; font-size: 18px; line-height: 50px; font-family: "Museo 500", "MuseoSans_500", sans-serif; color: #f1f1f3; border-radius: 3px 3px 0 0 ; background: #323a45; }
+#school-rank .rank-graph { position: relative; display: table; text-align: center; width: 100%; height: 280px; font-family: "Museo 700", "Museo_700", sans-serif; color: #9ea7b3; background: #ffffff url("../images/rank_graph.png") 50% 50% no-repeat; }
+#school-rank .rank-top { font-size: 18px; letter-spacing: 2px; }
+#school-rank .rank-text { position: relative; display: table-cell; height: 100%; vertical-align: middle; }
+#school-rank .rank-percent { position: relative; font-size: 60px; letter-spacing: -1px; color: #ffffff; }
+#school-rank .rank-percent-sign { position: relative; font-size: 20px; vertical-align: top; top: 6px; color: #9ea7b3; }
+#school-rank .rank-tab-wrap { position: relative; }
+#school-rank .rank-tab { position: relative; float: left; width: 33.05%; height: 75px; margin: 1px 0 0 1px; background: #f9fafc; }
+#school-rank .rank-tab-active { margin: 0 0 0 1px; height: 76px; background: #ffffff; }
+#school-rank .rank-tab-first { margin-left: 0; border-radius: 0 0 0 3px; }
+#school-rank .rank-tab-last { border-radius: 0 0 3px 0; }
+#school-rank .rank-tab a { display: block; text-align: center; width: 100%; height: 100%; font-size: 11px; line-height: 100px; text-decoration: none; font-family: "Museo 700"; color: #5e6d81; }
+#school-rank .rank-tab-active a { display: block; text-align: center; width: 100%; height: 100%; font-size: 11px; line-height: 100px; text-decoration: none; font-family: "Museo 700"; color: #14b9d6; }
+#school-rank .rank-tab-chart { background: url("../images/icon/info.png") 50% 30% no-repeat; }
+#school-rank .rank-tab-list { background: url("../images/icon/list.png") 50% 30% no-repeat; }
+#school-rank .rank-tab-active .rank-tab-chart { background: url("../images/icon/info_active.png") 50% 30% no-repeat; }
+#school-rank .rank-tab-active .rank-tab-list { background: url("../images/icon/list_active.png") 50% 30% no-repeat; }
+#school-panel { position: relative ; float: right; width: 100%; margin: 10px 0 0 0; }
+#school-panel .panel-title { text-align: center; }
+#school-panel .panel-subtitle { text-align: center; }
+#school-panel .panel-submit { float: none; margin: 20px auto; }
+#school-panel .school-info-wrap { position: relative; padding: 25px 20px; }
+#school-panel .school-info-row { position: relative; float: left; width: 100%; }
+#school-panel .school-info-title { text-align: center; font-size: 36px; font-family: "Museo Sans 500", "MuseoSans_500", sans-serif; color: #9ea7b3; padding: 0 0 20px 0; }
+#school-panel .school-info-earned { padding-bottom: 30px; text-align: center; font-size: 60px; font-family: "Museo Sans 500", "MuseoSans_500", sans-serif; color: #1fbba6; }
+#school-panel .school-supporters { text-align: center; padding-bottom: 15px; }
+#school-panel .school-popular-products { position: relative; padding-top: 30px; }
+#school-panel .popular-product-prev { position: absolute; top: 55px; left: 0; width: 20px; height: 30px; background: url("../images/icon/arrow_prev.png") 50% 50% no-repeat; }
+#school-panel .popular-product-next { position: absolute; top: 55px; right: 0; width: 20px; height: 30px; background: url("../images/icon/arrow_next.png") 50% 50% no-repeat; }
+#school-panel .popular-product-prev a, #school-panel .popular-product-next a { display: block; width: 100%; height: 100%;  }
+#school-panel .popular-product-row { padding: 0 20px; text-align: center; font-size: 0%; }
+#school-panel .popular-product-row a { display: inline-block; margin: 0 10px; }
+#school-stats { position: relative; float: left; margin: 15px 0 5px 0; width: 100%; }
+#school-stats .stat-graph { border-radius: 3px 3px 0 0 ; background: #1fbba6; }
+#school-stats .stat-graph-title { text-align: center; padding: 12px 0; color:#f1f1f3; }
+#school-stats .stat-graph-chart { height: 180px; background: url("../images/stat_graph_line.png") 50% 30% no-repeat; }
+#school-stats .stat-info-wrap { border-radius: 0 0 3px 3px; background: #ffffff; }
+#school-stats .stat-info { text-align: left; margin: 0 auto; width: 300px; padding: 10px 20px 20px 20px; border-bottom: 1px solid #eaedf1; font-family: "Museo Sans 300"; color: #9ea7b3; border-radius: 0 0 3px 3px; }
+#school-stats .stat-year { float: left; padding-top: 10px; }
+#school-stats .stat-year-title { font-size: 11px; }
+#school-stats .stat-year-chart { width: 150px; height: 48px; background: url("../images/stat_graph_bar.png") 50% 50% no-repeat; }
+#school-stats .stat-month { float: left; padding: 22px 0 0 18px; }
+#school-stats .stat-month-percent { text-align: center; font-size: 24px; line-height: 36px; font-family: "Museo 700", "Museo_700", sans-serif; color: #1fbba6; }
+#school-stats .stat-month-text { font-size: 8px; color: #cbd0d6; }
+#school-stats .stat-raised { float: left; padding: 0 0 10px 0; }
+#school-stats .stat-raised-last { margin-left: 25px; }
+#school-stats .stat-raised-title { font-size: 11px; line-height: 20px; font-family: "Museo 700", "Museo_700", sans-serif; font-weight: ; }
+#school-stats .stat-raised-value { font-size: 22px; font-family: "Museo 700", "Museo_700", sans-serif; color: #1fbba6; }
+#school-links { position: relative; float: none; text-align: center; margin-top: 6px; font-size: 0%; }
+#school-links .school-link-button { display: inline-block; position: relative; float: none; margin: 0 0 5px 1px; }
+#school-links .school-link-first { margin: 0 0 5px 0; }
+
+/* product detail page */
+#contents.product-detail-page { background: #d0ebf9 url("../images/product_background_placeholder.png") 50% 90px no-repeat; }
+#contents.product-detail-page #contents-full { min-height: 900px; background: rgba(208, 235, 249, 0.90); }
+#product-detail-panel  { position: relative; max-width: 730px; margin: 0 auto 30px auto; }
+#product-detail-panel  .item-detail-top { position: relative; padding: 10px 10px; }
+#product-detail-panel  .item-detail-title { position: relative; float: left; width: 100%; padding-top: 5px; color: #000000; }
+#product-detail-panel  .item-detail-cat { font-size: 26px; line-height: 30px; font-family: "Museo Sans 300", "MuseoSans_300", sans-serif; }
+#product-detail-panel  .item-detail-name { font-size: 26px; line-height: 36px; font-family: "Museo Sans 500", "MuseoSans_500", sans-serif; }
+#product-detail-panel  .item-detail-extra { position: relative; float: left; width: 100%; padding-top: 5px; }
+#product-detail-panel  .item-detail-fav { float: left; width: 42px; height: 42px; background: url("../images/icon/heart.png") 50% 50% no-repeat; }
+#product-detail-panel  .item-detail-earn { float: right; clear: right; text-align: right; padding-top: 8px; font-size: 24px; font-famiy: "Museo Sans 500", "MuseoSans_500", sans-serif; color: #1fbba6; }
+#product-detail-panel  .item-detail-wrap { position: relative; padding: 30px 20px 50px 20px; }
+#product-detail-panel  .item-detail-img { float: left; width: 100%; text-align: center; margin: 15px 0 30px 0; }
+#product-detail-panel  .item-detail-img img { max-width: 100%; }
+#product-detail-panel  .item-detail-desc { float: left; width: 100%; margin-left: 0; font-size: 14px; line-height: 18px; font-family: "Museo Sans 300", "MuseoSans_300", sans-serif; }
+#product-detail-panel  .item-detail-rating { float: right; width: 100%; text-align: right; margin-top: 30px; }
+#product-detail-panel  .item-review-link { color: #1fbba6; font-size: 14px; font-family: "Calibri"; text-decoration: none; }
+#product-detail-panel .item-share-wrap { position: relative; padding: 12px 5px; }
+#product-detail-panel  .item-share-title { float: left; width: 100%; text-align: center; font-size: 18px; line-height: 36px; font-family: "Museo Sans 500", "MuseoSans_500", sans-serif; }
+#product-detail-panel  .item-share-buttons { float: left; width: 100%; text-align: center; }
+#product-detail-panel .panel-submit a { display: block; margin: 0 auto; width: 290px; }
+
+
+
+/* footer content */
+footer { position: relative; margin: 0 auto 30px auto; max-width: 980px; background: #ffffff; text-align: center; padding: 8px; }
+footer .social-buttons { position: relative; margin: 0 0 5px 0; font-size: 0; }
+footer .social-buttons a { margin-left: 3px; }
+footer .copyright { margin: 0; font-size: 17px; font-family: "Museo Sans 300", "MuseoSans_300", sans-serif; font-weight: bold; }
